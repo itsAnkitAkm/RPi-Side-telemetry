@@ -19,7 +19,7 @@
 #include <mbedtls/entropy.h>
 #include <mbedtls/error.h>
 
-static const char* SERVER_IP = "YOUR_AWS_PUBLIC_IP"; // <--- REPLACE THIS
+static const char* SERVER_IP = "3.110.91.204"; 
 static const int SERVER_PORT = 4444;
 static const char* PSK_IDENTITY = "drone-D123";
 static const char* PSK_HEX = "73656372657450534b"; // must match server
