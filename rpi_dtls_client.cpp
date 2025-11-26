@@ -134,6 +134,8 @@ int main(){
         std::cerr << "ctr_drbg_seed failed\n"; return 1;
     }
 
+    mbedtls_ssl_conf_rng(&conf, mbedtls_ctr_drbg_random, &ctr);
+
     if (mbedtls_ssl_config_defaults(&conf,
             MBEDTLS_SSL_IS_CLIENT,
             MBEDTLS_SSL_TRANSPORT_DATAGRAM,
